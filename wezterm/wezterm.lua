@@ -4,45 +4,50 @@ local h = require("utils.helpers")
 local assets = wezterm.config_dir .. "/assets"
 local config = wezterm.config_builder()
 
-return {
-	-- color_scheme = 'terminal.sexy',
-	color_scheme = 'Catppuccin Mocha',
-	local fancy = false
+local fancy = true
 
-	colors = {
-		background = "#15141C"
-	},
+config.color_scheme = 'Catppuccin Mocha'
 
-    enable_tab_bar = false,
-    font_size = 13.0,
-	-- font = wezterm.font('JetBrainsMono Nerd Font'),
-	font = wezterm.font('JetBrains Mono'),
-	line_height = 1.5,
+config.colors = {
+	background = "#15141C"
+}
 
-	macos_window_background_blur = 30,
-	window_background_opacity = 0.92,
-	window_decorations = 'RESIZE',
-	window_close_confirmation = "NeverPrompt",
+config.enable_tab_bar = false
+config.font_size = 13.0
+config.font = wezterm.font('JetBrains Mono')
+config.line_height = 1.5
 
-	enable_scroll_bar = true,
-	scrollback_lines = 10000,
+config.macos_window_background_blur = 30
+config.window_background_opacity = 0.92
+config.window_decorations = 'RESIZE'
+config.window_close_confirmation = "NeverPrompt"
 
-	
+config.enable_scroll_bar = true
+config.scrollback_lines = 10000
 
-	keys = {
-		{
-			key = 'f',
-			mods = 'CMD|SHIFT',
-			action = wezterm.action.ToggleFullScreen,
-		},
-	},
+if fancy then
+	config.background = {
+		b.get_background(),
+		b.get_animation(assets .. "/blob_blue.gif"),
+	}
+end
 
-	mouse_bindings = {
-	  -- Ctrl-click will open the link under the mouse cursor
-	  {
-	    event = { Up = { streak = 1, button = 'Left' } },
-	    mods = 'CMD',
-	    action = wezterm.action.OpenLinkAtMouseCursor,
-	  },
+
+config.keys = {
+	{
+		key = 'f',
+		mods = 'CMD|SHIFT',
+		action = wezterm.action.ToggleFullScreen,
 	},
 }
+
+config.mouse_bindings = {
+	-- Ctrl-click will open the link under the mouse cursor
+	{
+	event = { Up = { streak = 1, button = 'Left' } },
+	mods = 'CMD',
+	action = wezterm.action.OpenLinkAtMouseCursor,
+	},
+}
+
+return config
