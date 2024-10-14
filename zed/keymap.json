@@ -1,0 +1,16 @@
+[
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-r": "project_panel::Rename",
+      "cmd-n": "project_panel::NewFile"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-l": "go_to_line::Toggle",
+      "cmd-g": "editor::SelectLine"
+    }
+  }
+]
