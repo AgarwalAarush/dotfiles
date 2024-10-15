@@ -13,11 +13,12 @@ config.colors = {
 }
 
 config.enable_tab_bar = false
+
 config.font_size = 13.0
 config.font = wezterm.font('JetBrains Mono')
 config.line_height = 1.5
 
-config.macos_window_background_blur = 30
+config.macos_window_background_blur = 50
 config.window_background_opacity = 0.92
 config.window_decorations = 'RESIZE'
 config.window_close_confirmation = "NeverPrompt"
@@ -27,7 +28,6 @@ config.scrollback_lines = 10000
 
 if fancy then
 	config.background = {
-		b.get_background(),
 		b.get_animation(assets .. "/blob_blue.gif"),
 	}
 end
