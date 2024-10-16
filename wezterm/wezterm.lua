@@ -15,7 +15,7 @@ config.colors = {
 config.enable_tab_bar = false
 
 config.font_size = 13.0
-config.font = wezterm.font('JetBrains Mono')
+config.font = wezterm.font('JetBrainsMono Nerd Font')
 config.line_height = 1.5
 
 config.macos_window_background_blur = 50
@@ -28,6 +28,7 @@ config.scrollback_lines = 10000
 
 if fancy then
 	config.background = {
+        b.get_wallpaper(assets .. "/cosmic.jpg"),
 		b.get_animation(assets .. "/blob_blue.gif"),
 	}
 end

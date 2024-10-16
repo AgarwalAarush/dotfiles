@@ -30,7 +30,7 @@ M.get_wallpaper = function(wallpaper)
     horizontal_align = "Center",
     repeat_x = "NoRepeat",
     repeat_y = "NoRepeat",
-    opacity = 1,
+    opacity = 0.6,
   }
 end
 
