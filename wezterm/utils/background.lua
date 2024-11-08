@@ -13,7 +13,7 @@ M.get_background = function(dark, light)
   return {
     source = {
       Gradient = {
-        colors = { h.is_dark and "#000000" or "#ffffff" },
+        colors = { h.is_dark and "#151f24" or "#ffffff" },
       },
     },
     width = "100%",
@@ -30,7 +30,7 @@ M.get_wallpaper = function(wallpaper)
     horizontal_align = "Center",
     repeat_x = "NoRepeat",
     repeat_y = "NoRepeat",
-    opacity = 0.6,
+    opacity = 1,
   }
 end
 

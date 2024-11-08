@@ -5,7 +5,6 @@ local assets = wezterm.config_dir .. "/assets"
 local config = wezterm.config_builder()
 
 local fancy = true
-
 config.color_scheme = 'Catppuccin Mocha'
 
 config.colors = {
@@ -28,18 +27,35 @@ config.scrollback_lines = 10000
 
 if fancy then
 	config.background = {
-        b.get_wallpaper(assets .. "/cosmic.jpg"),
+        -- b.get_wallpaper(assets .. "/cosmic.jpg"),
+        b.get_background();
 		b.get_animation(assets .. "/blob_blue.gif"),
 	}
 end
 
+config.leader = { key = 'Space', mods = 'CMD|SHIFT', timeout_milliseconds = 1000 }
 
 config.keys = {
 	{
 		key = 'f',
-		mods = 'CMD|SHIFT',
+		mods = 'LEADER',
 		action = wezterm.action.ToggleFullScreen,
 	},
+    {
+        key = 'd',
+        mods = 'LEADER',
+        action = wezterm.action.CloseCurrentPane { confirm = false },
+    },
+    {
+        key = 'z',
+        mods = 'LEADER',
+        action = wezterm.action.TogglePaneZoomState,
+    },
+    {
+        key = 'v',
+        mods = 'LEADER',
+        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    },
 }
 
 config.mouse_bindings = {
@@ -49,6 +65,14 @@ config.mouse_bindings = {
 	mods = 'CMD',
 	action = wezterm.action.OpenLinkAtMouseCursor,
 	},
+}
+
+config.ssh_domains = {
+    {
+        name = 'cmu_server',
+        remote_address = 'unix.andrew.cmu.edu',
+        username = 'aarusha',
+    },
 }
 
 return config
