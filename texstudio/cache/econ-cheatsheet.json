@@ -1,0 +1,35 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/econ-cheatsheet.tex",
+    "labels": [
+    ],
+    "modified": "Wed Apr 16 10:15:41 2025",
+    "packages": [
+        "10pt,twocolumn#latex-document",
+        "10pt,twocolumn#tex",
+        "#enumitem",
+        "#amssymb",
+        "#amsfonts",
+        "#amsmath",
+        "margin=0.5in#geometry"
+    ],
+    "refs": [
+    ],
+    "toc": [
+    ],
+    "usercommands": [
+        [
+            "",
+            "\\sum_i"
+        ],
+        [
+            "",
+            "\\sum_i"
+        ]
+    ]
+}

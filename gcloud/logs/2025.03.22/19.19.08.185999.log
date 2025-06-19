@@ -1,0 +1,28 @@
+2025-03-22 19:19:08,186 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-03-22 19:19:08,187 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-03-22 19:19:08,199 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'set_quota_project']
+2025-03-22 19:19:08,200 DEBUG    root            Running [gcloud.auth.application-default.set-quota-project] with arguments: [QUOTA_PROJECT_ID: "jarvis"]
+2025-03-22 19:19:08,212 INFO     root            Using alternate credentials from file: [/Users/aarushagarwal/.config/gcloud/application_default_credentials.json]
+2025-03-22 19:19:08,213 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-03-22 19:19:08,217 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-03-22 19:19:08,315 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-03-22 19:19:08,318 INFO     root            Using alternate credentials from file: [/Users/aarushagarwal/.config/gcloud/application_default_credentials.json]
+2025-03-22 19:19:08,325 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:19:08,544 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/jarvis:testIamPermissions?alt=json HTTP/11" 200 None
+2025-03-22 19:19:08,546 WARNING  root            Cannot find a project to insert into application default credentials (ADC) as a quota project.
+Run $gcloud auth application-default set-quota-project to insert a quota project to ADC.
+2025-03-22 19:19:08,548 DEBUG    root            (gcloud.auth.application-default.set-quota-project) Cannot add the project "jarvis" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.
+Traceback (most recent call last):
+  File "/Users/aarushagarwal/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 981, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aarushagarwal/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aarushagarwal/Downloads/google-cloud-sdk/lib/surface/auth/application_default/set_quota_project.py", line 58, in Run
+    return auth_util.AddQuotaProjectToADC(args.quota_project_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aarushagarwal/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/auth_util.py", line 321, in AddQuotaProjectToADC
+    raise MissingPermissionOnQuotaProjectError(
+googlecloudsdk.command_lib.auth.auth_util.MissingPermissionOnQuotaProjectError: Cannot add the project "jarvis" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.
+2025-03-22 19:19:08,551 ERROR    root            (gcloud.auth.application-default.set-quota-project) Cannot add the project "jarvis" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.

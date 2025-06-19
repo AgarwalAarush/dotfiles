@@ -1,0 +1,69 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/bayes-notes.tex",
+    "labels": [
+    ],
+    "modified": "Fri Apr 18 14:37:35 2025",
+    "packages": [
+        "#enumitem",
+        "11pt#latex-document",
+        "11pt#tex",
+        "#graphicx",
+        "#listings",
+        "#amssymb",
+        "#amsmath",
+        "#hyperref",
+        "#nameref",
+        "margin=1in#geometry"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Learning Objectives#26",
+        "2#Bayes Nets: Representation#39",
+        "3#Answer Query from a Conditional Probability Table (CPT)#41",
+        "3#Graphical‑Model Notation#69",
+        "5#Example.#88",
+        "2#Independence#102",
+        "3#Conditional Independence and Bayes Ball#104",
+        "5#Example 1.#124",
+        "5#Example 2.#133",
+        "2#Inference#142",
+        "3#Enumeration (Exact Inference)#144",
+        "3#Variable Elimination#177",
+        "5#Worked‐through ordering example.#193",
+        "2#Sampling (Approximate Inference)#208",
+        "3#Prior Sampling#210",
+        "3#Rejection Sampling#224",
+        "3#Likelihood‑Weighted Sampling#234",
+        "3#Gibbs Sampling#253",
+        "2#Compiling#263"
+    ],
+    "usercommands": [
+        [
+            "",
+            "\\sum_{w,g}"
+        ],
+        [
+            "",
+            "\\sum_{q}"
+        ],
+        [
+            "",
+            "\\prod_{i=1}"
+        ],
+        [
+            "",
+            "\\sum_{h}"
+        ],
+        [
+            "",
+            "\\sum_{h,w}"
+        ]
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "../../Documents/LatexStudio/hw10/hw10.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 29,
+                "EditorGroup": 0,
+                "FileName": "../../Documents/LatexStudio/hw10/yoursolution.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "../../Documents/LatexStudio/hw10/hw10.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": false
+    }
+}

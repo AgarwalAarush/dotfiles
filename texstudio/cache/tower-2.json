@@ -1,0 +1,38 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/tower-2.tex",
+    "labels": [
+    ],
+    "modified": "Mon Apr 14 11:49:14 2025",
+    "packages": [
+        "#enumitem",
+        "#booktabs",
+        "margin=0.7in#geometry",
+        "#xcolor",
+        "#hyperref",
+        "#nameref",
+        "#multicol",
+        "#parskip",
+        "10pt#latex-document",
+        "10pt#tex",
+        "#titlesec"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Workshop Upgrade Priorities#24",
+        "3#Economy Upgrades#26",
+        "3#Defense Upgrades#36",
+        "3#Attack Upgrades#48",
+        "2#In-Run Upgrade Sequence#68",
+        "2#Thorns Milestones#84",
+        "2#Strategic Tips#97"
+    ],
+    "usercommands": [
+    ]
+}

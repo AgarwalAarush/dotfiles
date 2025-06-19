@@ -7,6 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "o3-mini"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "base_keymap": "VSCode",
   "theme": "Andromeda",
   "buffer_font_size": 14,
@@ -28,5 +38,5 @@
     "blinking": "on",
     "line_height": "comfortable"
   },
-  "vim_mode": true
+  "vim_mode": true,
 }

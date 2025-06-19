@@ -1,0 +1,34 @@
+2025-03-22 19:18:11,197 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-03-22 19:18:11,200 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2025-03-22 19:18:11,200 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2025-03-22 19:18:11,200 INFO     root            client_filter="None" server_filter="None"
+2025-03-22 19:18:11,211 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+
+2025-03-22 19:18:11,211 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+"
+2025-03-22 19:18:11,217 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:18:11,612 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/11" 200 None
+2025-03-22 19:18:11,630 INFO     ___FILE_ONLY___ PROJECT_ID
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___         
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ NAME
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___               
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ 
+
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ novahacksproject
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___   
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ NovaHacksProject
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___   
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ 327605569476
+2025-03-22 19:18:11,631 INFO     ___FILE_ONLY___ 
+

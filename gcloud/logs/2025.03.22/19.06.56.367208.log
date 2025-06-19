@@ -1,0 +1,107 @@
+2025-03-22 19:06:56,415 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2025-03-22 19:06:56,416 DEBUG    root            Running [gcloud.init] with arguments: []
+2025-03-22 19:06:56,416 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2025-03-22 19:06:56,417 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2025-03-22 19:06:56,417 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2025-03-22 19:06:56,417 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2025-03-22 19:06:56,417 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2025-03-22 19:06:56,417 INFO     ___FILE_ONLY___ Checking network connection...
+2025-03-22 19:06:57,126 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2025-03-22 19:06:57,193 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/11" 302 365
+2025-03-22 19:06:57,232 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/11" 302 0
+2025-03-22 19:06:57,274 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /InteractiveLogin?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&ifkv=AXH0vVvlPVIV_X5r88zMLjfLAMiguOaoFidyoArap9N_-YjzKAEI8HvBjDn_dHpGUH2iGaiKTscS HTTP/11" 302 554
+2025-03-22 19:06:57,334 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AXH0vVvWjeZywjHj9b8y2HLJE_8PUgPF6ZDENF7RC4YHufNZlcBPEbpcly15hLS8isuP1gRTS6SDIg&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-922437464%3A1742684817279626 HTTP/11" 200 None
+2025-03-22 19:06:57,379 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:06:57,443 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/11" 401 None
+2025-03-22 19:06:57,450 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2025-03-22 19:06:57,518 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/11" 200 14
+2025-03-22 19:06:57,526 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-03-22 19:06:57,593 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/11" 200 226134
+2025-03-22 19:06:57,646 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2025-03-22 19:06:57,647 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2025-03-22 19:06:59,268 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-03-22 19:06:59,281 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2025-03-22 19:06:59,282 INFO     root            Executing: [gcloud auth login --force --brief]
+2025-03-22 19:06:59,283 DEBUG    root            Running [gcloud.auth.login] with arguments: [--brief: "True", --force: "True"]
+2025-03-22 19:07:01,145 DEBUG    requests_oauthlib.oauth2_session Generated new state brWBP9rLJM9Ix7tbPCvpf7h0eVjlXT.
+2025-03-22 19:07:01,314 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=brWBP9rLJM9Ix7tbPCvpf7h0eVjlXT&access_type=offline&code_challenge=mPCbBjEiyHJ16fJsFW16z5xd0UYZZYOLuMoCuUl9M94&code_challenge_method=S256
+
+
+2025-03-22 19:07:34,104 INFO     google_auth_oauthlib.flow "GET /?state=brWBP9rLJM9Ix7tbPCvpf7h0eVjlXT&code=4/0AQSTgQH91gTcz3h-C40GTAY5JSmR6Q3s1Zva4tqTFSZruACoRV4dtzY1zY3eC_X9i_7_Dw&scope=email%20openid%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/cloud-platform%20https://www.googleapis.com/auth/appengine.admin%20https://www.googleapis.com/auth/sqlservice.login%20https://www.googleapis.com/auth/compute%20https://www.googleapis.com/auth/accounts.reauth&authuser=0&hd=andrew.cmu.edu&prompt=consent HTTP/1.1" 200 937
+2025-03-22 19:07:34,105 DEBUG    requests_oauthlib.oauth2_session Requesting url https://oauth2.googleapis.com/token using method POST.
+2025-03-22 19:07:34,105 DEBUG    requests_oauthlib.oauth2_session Supplying headers {b'Accept': b'application/json', b'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', b'user-agent': b'google-cloud-sdk gcloud/515.0.0 command/gcloud.auth.login invocation-id/011d2e6195ec44f4a9aa8e341e1fc3bc environment/None environment-version/None client-os/MACOSX client-os-ver/24.3.0 client-pltf-arch/arm interactive/True from-script/False python/3.12.8 term/xterm-256color (Macintosh; Intel Mac OS X 24.3.0)'} and data {'grant_type': 'authorization_code', 'client_id': '32555940559.apps.googleusercontent.com', 'client_secret': 'ZmssLNjJy2998hD4CTg2ejr2', 'code': '4/0AQSTgQH91gTcz3h-C40GTAY5JSmR6Q3s1Zva4tqTFSZruACoRV4dtzY1zY3eC_X9i_7_Dw', 'redirect_uri': 'http://localhost:8085/', 'code_verifier': 'FQLu3Gg_NZqNkvp2~iOp6iFEmfz~2m-h5voxX901IkbWm7NgdNZviN4seqAJAhl0uYGG0RNEsXo4A5bsdfv1PKi8b4tiu9t-Fk.fTPqhYwCb1i6XB~rMTKMm90zKkIf~'}
+2025-03-22 19:07:34,105 DEBUG    requests_oauthlib.oauth2_session Passing through key word arguments {'json': None, 'timeout': None, 'auth': None, 'verify': None, 'proxies': None}.
+2025-03-22 19:07:34,107 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-03-22 19:07:34,232 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-03-22 19:07:34,233 DEBUG    requests_oauthlib.oauth2_session Prepared fetch token request body grant_type=authorization_code&client_id=32555940559.apps.googleusercontent.com&client_secret=ZmssLNjJy2998hD4CTg2ejr2&code=4%2F0AQSTgQH91gTcz3h-C40GTAY5JSmR6Q3s1Zva4tqTFSZruACoRV4dtzY1zY3eC_X9i_7_Dw&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=FQLu3Gg_NZqNkvp2~iOp6iFEmfz~2m-h5voxX901IkbWm7NgdNZviN4seqAJAhl0uYGG0RNEsXo4A5bsdfv1PKi8b4tiu9t-Fk.fTPqhYwCb1i6XB~rMTKMm90zKkIf~
+2025-03-22 19:07:34,233 DEBUG    requests_oauthlib.oauth2_session Request to fetch token completed with status 200.
+2025-03-22 19:07:34,234 DEBUG    requests_oauthlib.oauth2_session Request headers were {'user-agent': b'google-cloud-sdk gcloud/515.0.0 command/gcloud.auth.login invocation-id/011d2e6195ec44f4a9aa8e341e1fc3bc environment/None environment-version/None client-os/MACOSX client-os-ver/24.3.0 client-pltf-arch/arm interactive/True from-script/False python/3.12.8 term/xterm-256color (Macintosh; Intel Mac OS X 24.3.0)', 'Accept-Encoding': 'gzip, deflate', 'Accept': b'application/json', 'Connection': 'keep-alive', 'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', 'Content-Length': '387'}
+2025-03-22 19:07:34,234 DEBUG    requests_oauthlib.oauth2_session Request body was grant_type=authorization_code&client_id=32555940559.apps.googleusercontent.com&client_secret=ZmssLNjJy2998hD4CTg2ejr2&code=4%2F0AQSTgQH91gTcz3h-C40GTAY5JSmR6Q3s1Zva4tqTFSZruACoRV4dtzY1zY3eC_X9i_7_Dw&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=FQLu3Gg_NZqNkvp2~iOp6iFEmfz~2m-h5voxX901IkbWm7NgdNZviN4seqAJAhl0uYGG0RNEsXo4A5bsdfv1PKi8b4tiu9t-Fk.fTPqhYwCb1i6XB~rMTKMm90zKkIf~
+2025-03-22 19:07:34,234 DEBUG    requests_oauthlib.oauth2_session Response headers were {'Pragma': 'no-cache', 'Date': 'Sat, 22 Mar 2025 23:07:34 GMT', 'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin, X-Origin, Referer', 'Content-Encoding': 'gzip', 'Server': 'scaffolding on HTTPServer2', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} and content {
+  "access_token": "ya29.a0AeXRPp7LCzGInIilZVcizzgFjtmZfYUsn1manhNaJXN2FgtUsUUf1TdOv30jlmjKV1QIiIFqbD4Dh5RE73BxYRdA6uBi2Th_Z1SDsujUPn5j3YkxD3d7ufxBLU60AnL1TySMsHUKT-mHK8d1EziIVRUAc_WnXgyY-97b-agYbzrFmgaCgYKAfASARESFQHGX2MirUk2VfJCCM3deO31kvMkHw0181",
+  "expires_in": 3599,
+  "refresh_token": "1//05gemWYUrnyXaCgYIARAAGAUSNwF-L9IrmWZpdi96zuJ_gBVWBCpdTlbr9sL3YsfVaQ6oVmgBlN1WFmFvvSObivDihlnAex5RDZs",
+  "scope": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/sqlservice.login https://www.googleapis.com/auth/appengine.admin openid https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/accounts.reauth",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImVlMTkzZDQ2NDdhYjRhMzU4NWFhOWIyYjNiNDg0YTg3YWE2OGJiNDIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1OTk5OTU3NzQzNjM5NzQyODk4IiwiaGQiOiJhbmRyZXcuY211LmVkdSIsImVtYWlsIjoiYWFydXNoYUBhbmRyZXcuY211LmVkdSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiX1k0UXliVk5YYTk0bkdnUFZHNjNNdyIsImlhdCI6MTc0MjY4NDg1NCwiZXhwIjoxNzQyNjg4NDU0fQ.X_HgHDiIOfs9Oe7_83ykni9TLPNXpN5yLh-VfAQT0bE-GbZKKLsnK6qjr4a8_qRj_l8fC06HDY99kyCBe3wdF9OXTL0iGKe6nRN5Inh6ItASgW9VCER976qvc1oqmNztqi2Ndeqr44HsCHFRHeKOTDxqvvHNeOJMzMgU91ThShg_9U4rjnoeLbWaSsQ_zr872RlbuQXCvp7fzGzkj718URmd0T796UX8pxQfU_j3y_UymO8tm_w73dbmCliNSk8Sa6X_D3FodtVqubqS5AnEp9LQgAcPb9ZGNI5EVQtCSsEmrVfxvHESfgl2_HfDqAyxKsK4SNLddxnDKW4hnNDxyw"
+}.
+2025-03-22 19:07:34,234 DEBUG    requests_oauthlib.oauth2_session Invoking 0 token response hooks.
+2025-03-22 19:07:34,235 DEBUG    requests_oauthlib.oauth2_session Obtained token {'access_token': 'ya29.a0AeXRPp7LCzGInIilZVcizzgFjtmZfYUsn1manhNaJXN2FgtUsUUf1TdOv30jlmjKV1QIiIFqbD4Dh5RE73BxYRdA6uBi2Th_Z1SDsujUPn5j3YkxD3d7ufxBLU60AnL1TySMsHUKT-mHK8d1EziIVRUAc_WnXgyY-97b-agYbzrFmgaCgYKAfASARESFQHGX2MirUk2VfJCCM3deO31kvMkHw0181', 'expires_in': 3599, 'refresh_token': '1//05gemWYUrnyXaCgYIARAAGAUSNwF-L9IrmWZpdi96zuJ_gBVWBCpdTlbr9sL3YsfVaQ6oVmgBlN1WFmFvvSObivDihlnAex5RDZs', 'scope': ['https://www.googleapis.com/auth/compute', 'https://www.googleapis.com/auth/sqlservice.login', 'https://www.googleapis.com/auth/appengine.admin', 'openid', 'https://www.googleapis.com/auth/cloud-platform', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/accounts.reauth'], 'token_type': 'Bearer', 'id_token': 'eyJhbGciOiJSUzI1NiIsImtpZCI6ImVlMTkzZDQ2NDdhYjRhMzU4NWFhOWIyYjNiNDg0YTg3YWE2OGJiNDIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1OTk5OTU3NzQzNjM5NzQyODk4IiwiaGQiOiJhbmRyZXcuY211LmVkdSIsImVtYWlsIjoiYWFydXNoYUBhbmRyZXcuY211LmVkdSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiX1k0UXliVk5YYTk0bkdnUFZHNjNNdyIsImlhdCI6MTc0MjY4NDg1NCwiZXhwIjoxNzQyNjg4NDU0fQ.X_HgHDiIOfs9Oe7_83ykni9TLPNXpN5yLh-VfAQT0bE-GbZKKLsnK6qjr4a8_qRj_l8fC06HDY99kyCBe3wdF9OXTL0iGKe6nRN5Inh6ItASgW9VCER976qvc1oqmNztqi2Ndeqr44HsCHFRHeKOTDxqvvHNeOJMzMgU91ThShg_9U4rjnoeLbWaSsQ_zr872RlbuQXCvp7fzGzkj718URmd0T796UX8pxQfU_j3y_UymO8tm_w73dbmCliNSk8Sa6X_D3FodtVqubqS5AnEp9LQgAcPb9ZGNI5EVQtCSsEmrVfxvHESfgl2_HfDqAyxKsK4SNLddxnDKW4hnNDxyw', 'expires_at': 1742688453.235213}.
+2025-03-22 19:07:34,254 DEBUG    root            Chosen display Format:none
+2025-03-22 19:07:34,256 INFO     root            Display format: "none"
+2025-03-22 19:07:34,288 INFO     ___FILE_ONLY___ You are signed in as: [aarusha@andrew.cmu.edu].
+
+
+2025-03-22 19:07:34,311 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:07:34,506 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/11" 200 None
+2025-03-22 19:07:48,850 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:07:49,057 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/11" 409 None
+2025-03-22 19:07:49,058 WARNING  root            Project creation failed: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 22 Mar 2025 23:07:49 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=157', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 409}>, content <{
+  "error": {
+    "code": 409,
+    "message": "Requested entity already exists",
+    "status": "ALREADY_EXISTS"
+  }
+}
+>
+Please make sure to create the project [jarvis] using
+    $ gcloud projects create jarvis
+or change to another project using
+    $ gcloud config set project <PROJECT ID>
+2025-03-22 19:07:49,058 INFO     ___FILE_ONLY___ The Google Cloud CLI is configured and ready to use!
+
+
+2025-03-22 19:07:49,059 INFO     ___FILE_ONLY___ * Commands that require authentication will use aarusha@andrew.cmu.edu by default
+
+2025-03-22 19:07:49,059 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2025-03-22 19:07:49,059 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2025-03-22 19:07:49,059 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2025-03-22 19:07:49,059 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2025-03-22 19:07:49,060 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2025-03-22 19:07:49,060 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the CLI like arg files and output formatting
+
+2025-03-22 19:07:49,060 INFO     ___FILE_ONLY___ * Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+
+2025-03-22 19:07:49,060 DEBUG    root            Chosen display Format:default
+2025-03-22 19:07:49,061 INFO     root            Display format: "default"

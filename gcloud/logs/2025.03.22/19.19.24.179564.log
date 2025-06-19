@@ -1,0 +1,19 @@
+2025-03-22 19:19:24,179 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-03-22 19:19:24,180 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-03-22 19:19:24,192 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'set_quota_project']
+2025-03-22 19:19:24,192 DEBUG    root            Running [gcloud.auth.application-default.set-quota-project] with arguments: [QUOTA_PROJECT_ID: "jarvis-454523"]
+2025-03-22 19:19:24,199 INFO     root            Using alternate credentials from file: [/Users/aarushagarwal/.config/gcloud/application_default_credentials.json]
+2025-03-22 19:19:24,200 INFO     root            Using alternate credentials from file: [/Users/aarushagarwal/.config/gcloud/application_default_credentials.json]
+2025-03-22 19:19:24,207 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:19:24,689 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/jarvis-454523:testIamPermissions?alt=json HTTP/11" 200 None
+2025-03-22 19:19:24,693 INFO     ___FILE_ONLY___ 
+Credentials saved to file: [/Users/aarushagarwal/.config/gcloud/application_default_credentials.json]
+
+2025-03-22 19:19:24,693 INFO     ___FILE_ONLY___ 
+These credentials will be used by any library that requests Application Default Credentials (ADC).
+
+2025-03-22 19:19:24,693 INFO     ___FILE_ONLY___ 
+Quota project "jarvis-454523" was added to ADC which can be used by Google client libraries for billing and quota. Note that some services may still bill the project owning the resource.
+
+2025-03-22 19:19:24,694 DEBUG    root            Chosen display Format:none
+2025-03-22 19:19:24,694 INFO     root            Display format: "none"

@@ -1,0 +1,118 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/midterm-review.tex",
+    "labels": [
+    ],
+    "modified": "Tue Apr 15 15:53:33 2025",
+    "packages": [
+        "margin=1in#geometry",
+        "#latex-document",
+        "#tex",
+        "#amssymb",
+        "#amsmath"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Problem 1: Matrix multiplication recurrence#10",
+        "2#Problem 2: Trees with no degree‑2 vertex#19",
+        "2#Problem 3: \\(n\\) vertices, \\(n-2\\) edges#24",
+        "2#Problem 4: Graph table#33",
+        "2#Problem 5: Naive shortest path#45",
+        "2#Problem 6: Maximum matching approximation#57",
+        "2#Problem 7: Beliebers#75",
+        "2#Problem 8: Menger NP#95",
+        "2#Problem 9: NP is closed under star#106",
+        "2#Problem 10: MNF‑SAT#111",
+        "2#Problem 11: HALF‑CLIQUE#120",
+        "2#Problem 12: ROOT#129",
+        "2#Problem 13: Another probability tree#141",
+        "2#Problem 14: Random independent set#162",
+        "2#Problem 15: Randomization meets NP#183",
+        "2#Problem 16: Randomization meets approximation#195",
+        "2#Problem 17: MAX‑CUT Monte Carlo#200"
+    ],
+    "usercommands": [
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathrm{MAX\\text{-}3SAT}"
+        ],
+        [
+            "",
+            "\\mathrm{Bernoulli}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathrm{ROOT}"
+        ],
+        [
+            "",
+            "\\mathsf{NP}"
+        ],
+        [
+            "",
+            "\\sum_{x}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathrm{HALF\\text{-}CLIQUE}"
+        ],
+        [
+            "",
+            "\\mathrm{NP}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathbb{E}"
+        ],
+        [
+            "",
+            "\\mathrm{Bernoulli}"
+        ],
+        [
+            "",
+            "\\mathrm{RandInt}"
+        ],
+        [
+            "",
+            "\\mathrm{Bernoulli}"
+        ]
+    ]
+}

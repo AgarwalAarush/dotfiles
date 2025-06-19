@@ -1,0 +1,32 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/reduction-bee.tex",
+    "labels": [
+    ],
+    "modified": "Tue Apr 15 13:47:28 2025",
+    "packages": [
+        "margin=1in#geometry",
+        "#latex-document",
+        "#tex",
+        "#amssymb",
+        "#amsmath"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Q1: All-but-17 Path Problem#11",
+        "2#Round 1 Q2: IN-CLIQUE#14",
+        "2#Round 1 Q3: DOUBLE-IS#17",
+        "2#Q3.5: Directed Hamiltonian Path#20",
+        "2#Round 1 Q4: DOUBLE-SAT#23",
+        "2#Q9.5: 4COL#26",
+        "2#Q10: Rival Teams#29"
+    ],
+    "usercommands": [
+    ]
+}

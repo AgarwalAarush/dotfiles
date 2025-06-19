@@ -1,0 +1,20 @@
+2025-03-22 19:09:49,688 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-03-22 19:09:49,692 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2025-03-22 19:09:49,693 DEBUG    root            Running [gcloud.projects.list] with arguments: [--filter: "PROJECT_ID:*jarvis* OR NAME:*jarvis*", --format: "table(projectId,name)"]
+2025-03-22 19:09:49,693 INFO     root            client_filter="None" server_filter="id:"*jarvis*" OR name:"*jarvis*""
+2025-03-22 19:09:49,711 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+ table(projectId,name)
+2025-03-22 19:09:49,711 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+ table(projectId,name)"
+2025-03-22 19:09:49,716 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-03-22 19:09:50,065 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE+AND+%28id%3A%22%2Ajarvis%2A%22+OR+name%3A%22%2Ajarvis%2A%22%29&pageSize=500 HTTP/11" 200 None

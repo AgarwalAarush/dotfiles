@@ -1,0 +1,38 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/aarushagarwal/Documents/LatexStudio/tower.tex",
+    "labels": [
+    ],
+    "modified": "Mon Apr 14 11:35:14 2025",
+    "packages": [
+        "10pt#latex-document",
+        "10pt#tex",
+        "#multicol",
+        "#xcolor",
+        "margin=0.7in#geometry",
+        "#titlesec",
+        "#parskip",
+        "#enumitem",
+        "#hyperref",
+        "#nameref"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Early Game Progression#23",
+        "3#Workshop Upgrades (Between Runs)#25",
+        "3#In-Run Upgrade Order#42",
+        "2#Turtle Build Strategy#52",
+        "3#Core Principles#54",
+        "3#Thorns Milestones#62",
+        "3#Additional Tips#73",
+        "3#Transitioning Beyond Turtle Build#81"
+    ],
+    "usercommands": [
+    ]
+}
