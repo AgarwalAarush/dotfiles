@@ -13,7 +13,7 @@ M.get_background = function(dark, light)
   return {
     source = {
       Gradient = {
-        colors = { h.is_dark and "#151f24" or "#ffffff" },
+        colors = { h.is_dark and "#151f24" or "#FFF" },
       },
     },
     width = "100%",
@@ -61,11 +61,15 @@ M.get_animation = function(animation)
     vertical_align = "Middle",
     width = "100%",
     height = "Cover",
-    opacity = 0.45,
-    hsb = {
+    opacity = h.is_dark and 0.45 or 0.25,
+    hsb = h.is_dark and {
       hue = 0.9,
       saturation = 0.8,
       brightness = 0.1,
+    } or {
+      hue = 0.9,
+      saturation = 0.3,
+      brightness = 0.8,
     },
   }
 end
