@@ -8,8 +8,13 @@ local fancy = true
 config.color_scheme = 'Catppuccin Latte'
 
 config.colors = {
-	background = "#FFF"
+	background = "#FFF",
+	tab_bar = {
+		background = "#FFF",
+	}
 }
+
+config.use_fancy_tab_bar = false
 
 config.enable_tab_bar = false
 
