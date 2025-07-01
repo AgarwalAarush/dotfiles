@@ -7,13 +7,13 @@ M.get_default_theme = function()
 end
 
 M.get_background = function(dark, light)
-  dark = dark or 0.85
+  dark = dark or 0.95
   light = light or 0.9
 
   return {
     source = {
       Gradient = {
-        colors = { h.is_dark and "#151f24" or "#ffffff" },
+        colors = { h.is_dark and "#141414" or "#ffffff" },
       },
     },
     width = "100%",

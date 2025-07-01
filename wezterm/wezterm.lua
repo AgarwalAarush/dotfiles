@@ -8,7 +8,7 @@ local fancy = true
 config.color_scheme = 'Catppuccin Mocha'
 
 config.colors = {
-	background = "#15141C"
+	background = "#141414"
 }
 
 config.enable_tab_bar = false
@@ -25,7 +25,7 @@ config.window_padding = {
 }
 
 config.macos_window_background_blur = 50
-config.window_background_opacity = 0.92
+config.window_background_opacity = 0.98
 config.window_decorations = 'RESIZE'
 config.window_close_confirmation = "NeverPrompt"
 
@@ -34,10 +34,10 @@ config.scrollback_lines = 10000
 
 if fancy then
 	config.background = {
+        -- Uncomment the next line to use a static wallpaper instead of a gradient
         -- b.get_wallpaper(assets .. "/cosmic.jpg"),
-        b.get_background();
-		-- b.get_animation(assets .. "/blob_blue.gif"),
-        b.get_animation(assets .. "/ai-speech.gif"),
+        -- Static gradient that adapts to the appearance (dark/light)
+        b.get_background(),
 	}
 end
 
