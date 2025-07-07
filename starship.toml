@@ -39,19 +39,19 @@ Unknown = '󰠥'
 
 # ---y
 
-# Shows the username
-[username]
-style_user = 'yellow bold'
-style_root = 'black bold'
-format = '[//](white bold) [$user](#2883ff) ' # 2883ff
-disabled = false
-show_always = true
+# # Shows the username
+# [username]
+# style_user = 'yellow bold'
+# style_root = 'black bold'
+# format = '[//](white bold) [$user](#2883ff) ' # 2883ff
+# disabled = false
+# show_always = true
 
-# Shows the hostname
-[hostname]
-ssh_only = false
-format = '[//](white bold) [$hostname](bold blue) '
-disabled = false
+# # Shows the hostname
+# [hostname]
+# ssh_only = false
+# format = '[//](white bold) [$hostname](bold blue) '
+# disabled = false
 
 # Shows current directory
 [directory]
@@ -61,7 +61,7 @@ home_symbol = '~'
 # read_only_style = '197'
 read_only = '  '
 format = '[//](white bold) [$path]($style)[$read_only]($read_only_style) '
-style = '#7ed1fb' # yellow bold
+style = '#AAA0FA' # light purple
 
 
 # Shows current git branch
@@ -90,9 +90,15 @@ staged = '[++\($count\)](green)'
 renamed = '襁 '
 deleted = ' '
 
+[conda]
+format = 'via [$symbol$environment]($style) '
+symbol = "🅒 "
+style = "green"
+ignore_base = false  # optional: show 'base' env too
+
 # Shows kubernetes context and namespace
 [kubernetes]
-format = 'via [󱃾 $context\($namespace\)](bold purple) '
+format = 'via [󱃾 $context\($namespace\)](bold #401499) '
 disabled = false
 
 # ---

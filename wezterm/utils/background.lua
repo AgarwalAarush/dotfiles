@@ -7,7 +7,7 @@ M.get_default_theme = function()
 end
 
 M.get_background = function(dark, light)
-  dark = dark or 0.95
+  dark = dark or 1
   light = light or 0.9
 
   return {
